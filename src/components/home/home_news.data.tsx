@@ -1,3 +1,4 @@
+'use client';
 import type { News } from '@/interfaces/News';
 
 let dataNews: Array<News> = [];
