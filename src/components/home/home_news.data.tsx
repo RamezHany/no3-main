@@ -14,7 +14,7 @@ export async function loadNewsData(locale: string): Promise<News[]> {
         if (shouldReload) {
             console.log(`Reloading news data for locale: ${locale}`);
             const response = await fetch('https://raw.githubusercontent.com/RamezHany/IGCCe-tr/refs/heads/main/news.json', {
-                cache: 'no-cache'
+                cache: 'no-store'
             });            const data = await response.json();
          
             
